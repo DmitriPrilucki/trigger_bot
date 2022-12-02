@@ -73,7 +73,7 @@ async def all_triggers(message: types.Message):
     await message.answer(str(uoi)
                          .replace('[', '').replace(']', '')
                          .replace('(', '').replace(')', '')
-                         .replace(',', '\n').replace("'", '')
+                         .replace(',', '\n').replace("'", '`')
                          .replace('\n\n', '\n'))
 
 
