@@ -3,14 +3,14 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Text
 from aiogram.dispatcher.filters.state import StatesGroup, State
-from config import MY_ID
+from config import MY_ID, TOKEN
 import logging
 import sql_for_trig
 
 logging.basicConfig(level=logging.INFO)
 
 storage = MemoryStorage()
-bot = Bot('5655857800:AAHhpBb3m88xjwK-FkJrKiv3wngLjoKytGo')
+bot = Bot(TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
 
